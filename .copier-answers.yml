@@ -1,0 +1,4 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY.
+_commit: "dev-integration"
+_src_path: "gh:OpenAutomatedDriving/dev-environment"
+_ros_distro: "jazzy"
