@@ -8,5 +8,5 @@ on:
 
 jobs:
   build:
-    uses: OpenAutomatedDriving/dev-environment/.github/workflows/docs.yml@main
+    uses: OpenAutomatedDriving/dev-environment/.github/workflows/docs.yml@submodule # TODO: revert to main
     secrets: inherit
