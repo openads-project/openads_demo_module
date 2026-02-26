@@ -1,0 +1,3 @@
+[submodule ".dev-environment"]
+	path = .dev-environment
+	url = https://github.com/OpenAutomatedDriving/dev-environment.git
