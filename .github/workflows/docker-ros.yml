@@ -1,6 +1,8 @@
 name: docker-ros
 
 # TODO: what is the best setup for PR workflows? see https://github.com/ika-rwth-aachen/etsi_its_messages/blob/main/.github/workflows/docker-ros.yml?
+# TODO: to enable GHCR
+# - Org Settings / Actions / Workflow permissions / Read and write permissions
 on:
   push:
   workflow_dispatch:
