@@ -47,6 +47,16 @@ TODO
 
 #### `ros2_demo_node`
 
+```mermaid
+flowchart LR
+    NODE("ros2_demo_node")
+    S0:::hidden -->|~/input| NODE
+    SS0:::hidden o--o|~/service| NODE
+    NODE -->|~/output| P0:::hidden
+    AS0:::hidden o-.-o|~/action| NODE
+    classDef hidden display: none;
+```
+
 ##### Subscribed Topics
 
 | Topic | Type | Description |
@@ -59,7 +69,13 @@ TODO
 | --- | --- | --- |
 | `~/output` | `geometry_msgs/msg/PointStamped` | |
 
-##### Actions
+##### Service Servers
+
+| Service | Type | Description |
+| --- | --- | --- |
+| `~/service` | `std_srvs/srv/SetBool` | |
+
+##### Action Servers
 
 | Action | Type | Description |
 | --- | --- | --- |
