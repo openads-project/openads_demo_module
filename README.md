@@ -17,6 +17,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 ## Table of Contents
 
+- [Usage](#usage)
 - [Auto-generated Package Documentation](#auto-generated-package-documentation)
 
 TODO
@@ -26,6 +27,16 @@ TODO
 - implementation details: arbitrarily long description of how the package/node works internally; useful for someone working on the source code
 - hardware requirements (amd/arm, CPU, GPU, RAM, ...) (CGE)
 - safety requirements/guarantees: "ODD"-boundaries, fallback behavior, ..  (CGE)
+
+## Usage
+
+### Run Tests
+
+```bash
+colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1
+colcon test
+colcon test-result --verbose
+```
 
 ## Auto-generated Package Documentation
 
