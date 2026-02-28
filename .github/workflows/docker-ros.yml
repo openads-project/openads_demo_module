@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  latest:
+  docker-ros:
     runs-on: ubuntu-latest
     steps:
       - uses: ika-rwth-aachen/docker-ros@main

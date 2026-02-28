@@ -5,6 +5,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  industrial_ci:
     uses: OpenAutomatedDriving/dev-environment/.github/workflows/industrial_ci.yml@submodule # TODO: revert to main
     secrets: inherit

@@ -7,6 +7,6 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  docs:
     uses: OpenAutomatedDriving/dev-environment/.github/workflows/docs.yml@submodule # TODO: revert to main
     secrets: inherit
