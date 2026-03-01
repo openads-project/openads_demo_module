@@ -18,20 +18,58 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 ## Table of Contents
 
-- [Usage](#usage)
-- [Auto-generated Package Documentation](#auto-generated-package-documentation)
+- [Quick Start](#quick-start)
+- [Development](#development)
+- [Package Documentation](#package-documentation)
+- [Implementation Details](#implementation-details)
+- [Acknowledgements](#acknowledgements)
 
-TODO
-- screenshot/catchy media showing package's output or similar (if applicable)
-- container image built by docker-ros
-- example launch command including launch args
-- implementation details: arbitrarily long description of how the package/node works internally; useful for someone working on the source code
-- hardware requirements (amd/arm, CPU, GPU, RAM, ...) (CGE)
-- safety requirements/guarantees: "ODD"-boundaries, fallback behavior, ..  (CGE)
 
-## Usage
+## Quick Start
+
+```bash
+docker run --rm -it ghcr.io/openautomateddriving/ros2_demo_repository:latest bash
+# --- in container
+ros2 launch ros2_demo_package ros2_demo_node_launch.py
+```
+
+## Development
+
+### Set up Development Environment
+
+1. Clone the repository.
+    ```bash
+    git clone https://github.com/OpenAutomatedDriving/ros2_demo_repository.git
+    ```
+1. Initialize the [`.dev-environment`](.dev-environment) submodule containing development environment configuration.
+    ```bash
+    cd ros2_demo_repository
+    git submodule update --init --recursive
+    ```
+1. Open the repository in [Visual Studio Code](https://code.visualstudio.com).
+    ```bash
+    code .
+    ```
+1. Install the recommended VS Code extensions.  
+    > *Ctrl+Shift+P / Extensions: Show Recommended Extensions / Install Workspace Recommended Extensions (Cloud Download Icon)*
+1. Reopen the repository in a [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers).
+    > *Ctrl+Shift+P / Dev Containers: Rebuild and Reopen in Container*
+
+### Build
+
+> *Ctrl+Shift+B*
+
+or
+
+```bash
+colcon build
+```
 
 ### Run Tests
+
+> *Ctrl+Shift+P / Tasks: Run Test Task*
+
+or
 
 ```bash
 colcon build --cmake-args -DCMAKE_EXPORT_COMPILE_COMMANDS=1
@@ -39,7 +77,10 @@ colcon test
 colcon test-result --verbose
 ```
 
-## Auto-generated Package Documentation
+
+## Package Documentation
+
+### [Source Code Documentation](https://openautomateddriving.github.io/ros2_demo_repository)
 
 ### `ros2_demo_package`
 
@@ -106,6 +147,11 @@ flowchart LR
 | Type | Description |
 | --- | --- |
 | [`ros2_demo_package_interfaces/action/Fibonacci`](ros2_demo_package_interfaces/action/Fibonacci.action) | |
+
+
+## Implementation Details
+
+TODO: provide on Doxygen developer documentation page?
 
 
 ## Acknowledgements
