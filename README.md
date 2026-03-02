@@ -1,10 +1,10 @@
 # ros2_demo_repository
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenADS-ffff00"/>
-  <img src="https://img.shields.io/github/v/release/OpenAutomatedDriving/ros2_demo_repository"/>
-  <img src="https://img.shields.io/github/license/OpenAutomatedDriving/ros2_demo_repository"/>
-  <img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/>
+  <a href="https://openautomateddriving.github.io"><img src="https://img.shields.io/badge/OpenADS-ffff00"/></a>
+  <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/releases/latest"><img src="https://img.shields.io/github/v/release/OpenAutomatedDriving/ros2_demo_repository"/></a>
+  <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/blob/main/LICENSE"><img src="https://img.shields.io/github/license/OpenAutomatedDriving/ros2_demo_repository"/></a>
+  <a href="https://www.ros.org"><img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/></a>
   <br>
   <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
   <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
