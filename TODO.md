@@ -1,7 +1,33 @@
-### README.md
+- auto-generate most of the READMEs
+- add example/demo to quick start
+- add catchy GIF to README
+- execute docker-ros local build in .devcontainer (maybe without having it as submodule)
+- add ruff linting/formatting for Python
+- add CI to run custom consistency checks
+  - README.md generator
+  - package.xml in folders, not on top-level
+  - launch files with remappable topics from src
+  - param declaration function
+  - existence of .dev-environment symlinks, IMPLEMENTATION.md
+  - topics with "~" in src
+  - is .dev-environment up-to-date?
+- is there still something like catkin_lint for package.xml or similar?
+- pre-commit should work out-of-the-box in devcontainer
+- add unit tests to ros2-pkg-create
+- LICENSE.md
+- CHANGELOG.md
+- (CONTRIBUTING.md)
+- guide for moving repos to GitHub
+  - create new repo
+  - repo settings
+  - important files to add
+  - naming conventions
+  - check package.xml deps
+  - (re-generate package.xml/CMakeLists.txt?)
+  - ...
 
-- auto-generate most of the README
+### Repo settings
 
-### Document for when creating a repository
-
-- Activate GitHub Pages Documentation: Repo Settings / Pages / Branch / gh-pages
+- Enable GHCR on Org Level: Org Settings / Actions / Workflow permissions / Read and write permissions
+- Enable GH Pages: Activate GitHub Pages Documentation: Repo Settings / Pages / Branch / gh-pages
+- ...
