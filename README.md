@@ -1,12 +1,14 @@
 # ros2_demo_repository
 
 <p align="center">
+  <img src="https://img.shields.io/badge/OpenADS-ffff00"/>
   <img src="https://img.shields.io/github/v/release/OpenAutomatedDriving/ros2_demo_repository"/>
   <img src="https://img.shields.io/github/license/OpenAutomatedDriving/ros2_demo_repository"/>
+  <img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/>
+  <br>
   <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
   <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
   <a href="https://OpenAutomatedDriving.github.io/ros2_demo_repository"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docs.yml/badge.svg"/></a>
-  <img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/>
 </p>
 
 **Demo repository for an OpenADS module**
@@ -16,13 +18,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 > [!IMPORTANT]  
 > This repository is part of [🚗 ***OpenADS***](https://github.com/OpenAutomatedDriving), the *Open Automated Driving Stack*.
 
-## 📋 Table of Contents
-
-- 🚀 [Quick Start](#-quick-start)
-- 🧑‍💻 [Development](#-development)
-- 📦 [Package Documentation](#-package-documentation)
-- 🔍 [Implementation Details](#-implementation-details)
-- 🙏 [Acknowledgements](#-acknowledgements)
+**🚀 [Quick Start](#-quick-start)** | **🧑‍💻 [Development](#-development)** | **📝 [Documentation](#-documentation)** | **🙏 [Acknowledgements](#-acknowledgements)**
 
 
 ## 🚀 Quick Start
@@ -81,80 +77,13 @@ colcon test-result --verbose
 ```
 
 
-## 📦 Package Documentation
+## 📝 Documentation
 
-[*Source Code Documentation*](https://openautomateddriving.github.io/ros2_demo_repository)
-
-### `ros2_demo_package`
-
-#### Launch Files
-
-##### [`ros2_demo_node_launch.py`](ros2_demo_package/launch/ros2_demo_node_launch.py)
-
-| Argument | Default | Description |
-| --- | --- | --- |
-| `input_topic` | `"~/input"` |  |
-| `output_topic` | `"~/output"` |  |
-| `name` | `"ros2_demo_node"` | node name |
-| `namespace` | `""` | node namespace |
-| `params` | `os.path.join(get_package_share_directory("ros2_demo_package"), "config", "params.yml")` | path to parameter file |
-| `log_level` | `"info"` | ROS logging level (debug, info, warn, error, fatal) |
-| `use_sim_time` | `"false"` | use simulation clock |
-
-#### `ros2_demo_node`
-
-```mermaid
-flowchart LR
-    NODE("ros2_demo_node")
-    S0:::hidden -->|~/input| NODE
-    SS0:::hidden o--o|~/service| NODE
-    NODE -->|~/output| P0:::hidden
-    AS0:::hidden o-.-o|~/action| NODE
-    classDef hidden display: none;
-```
-
-##### Subscribed Topics
-
-| Topic | Type | Description |
-| --- | --- | --- |
-| `~/input` | `geometry_msgs/msg/PointStamped` | |
-
-##### Published Topics
-
-| Topic | Type | Description |
-| --- | --- | --- |
-| `~/output` | `geometry_msgs/msg/PointStamped` | |
-
-##### Service Servers
-
-| Service | Type | Description |
-| --- | --- | --- |
-| `~/service` | `std_srvs/srv/SetBool` | |
-
-##### Action Servers
-
-| Action | Type | Description |
-| --- | --- | --- |
-| `~/action` | `ros2_demo_package_interfaces/action/Fibonacci` | |
-
-##### Parameters
-
-| Parameter | Type | Default | Description |
-| --- | --- | --- | --- |
-| `param` | `float` | `1.0` | TODO |
-
-### `ros2_demo_package_interfaces`
-
-#### Actions
-
-| Type | Description |
-| --- | --- |
-| [`ros2_demo_package_interfaces/action/Fibonacci`](ros2_demo_package_interfaces/action/Fibonacci.action) | |
-
-
-## 🔍 Implementation Details
-
-TODO: provide on Doxygen developer documentation page?
+- [Implementation Details](./docs/IMPLEMENTATION.md)
+- [Source Code Documentation](https://openautomateddriving.github.io/ros2_demo_repository)
+- Package Documentation
+  - [ros2_demo_package](ros2_demo_package/README.md)
+  - [ros2_demo_package_interfaces](ros2_demo_package_interfaces/README.md)
 
 
 ## 🙏 Acknowledgements
