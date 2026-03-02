@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['main_0',['main',['../ros2__demo__node_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97',1,'ros2_demo_node.cpp']]],
-  ['max_5facceptable_5ftimestamp_5fdelta_1',['max_acceptable_timestamp_delta',['../structros2__demo__package_1_1TopicDiagnosticConfig.html#a91d098dc3f3fb6efc5d23bab248bf504',1,'ros2_demo_package::TopicDiagnosticConfig']]],
-  ['max_5ffrequency_2',['max_frequency',['../structros2__demo__package_1_1TopicDiagnosticConfig.html#aae6df118ba26561e386dab1260508e6d',1,'ros2_demo_package::TopicDiagnosticConfig']]],
-  ['message_3',['message',['../structros2__demo__package_1_1Ros2DemoNode_1_1DiagnosticStatus.html#a14e03ccad2bdbcba18fe3976b6469e34',1,'ros2_demo_package::Ros2DemoNode::DiagnosticStatus']]],
-  ['min_5facceptable_5ftimestamp_5fdelta_4',['min_acceptable_timestamp_delta',['../structros2__demo__package_1_1TopicDiagnosticConfig.html#af15c224446fd9572233d56cd2761a992',1,'ros2_demo_package::TopicDiagnosticConfig']]],
-  ['min_5ffrequency_5',['min_frequency',['../structros2__demo__package_1_1TopicDiagnosticConfig.html#a76b9fed247a6cf778e80fc019600fbfb',1,'ros2_demo_package::TopicDiagnosticConfig']]],
-  ['mode_6',['Disable Dark Mode',['../md_doxygen-awesome-css_2docs_2tricks.html#tricks-darkmode',1,'']]],
-  ['mode_20toggle_7',['Dark Mode Toggle',['../md_doxygen-awesome-css_2docs_2extensions.html#extension-dark-mode-toggle',1,'']]],
-  ['mylibrary_8',['MyLibrary',['../namespaceMyLibrary.html',1,'']]]
+  ['service_5fserver_5f_0',['service_server_',['../classros2__demo__package_1_1Ros2DemoNode.html#a05be87761b01cd27463561c8203416e7',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['servicecallback_1',['serviceCallback',['../classros2__demo__package_1_1Ros2DemoNode.html#a7924a169d4357bfcd7bfab54ed7e988c',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['set_20up_20development_20environment_2',['Set up Development Environment',['../index.html#autotoc_md3',1,'']]],
+  ['sethealth_3',['setHealth',['../classros2__demo__package_1_1Ros2DemoNode.html#a1e2fd41433cfbd6458f6e7f1368ceb68',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['setup_4',['setup',['../classros2__demo__package_1_1Ros2DemoNode.html#a82fc774ca948972fe7ef6ad9523e8fd2',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['start_5',['🚀 Quick Start',['../index.html#autotoc_md1',1,'']]],
+  ['status_6',['status',['../structros2__demo__package_1_1Ros2DemoNode_1_1DiagnosticStatus.html#a19a8d13f979d2b6172017fcd91c1d04e',1,'ros2_demo_package::Ros2DemoNode::DiagnosticStatus']]],
+  ['subscriber_5f_7',['subscriber_',['../classros2__demo__package_1_1Ros2DemoNode.html#af194473eedc6a854a5b12da145413afa',1,'ros2_demo_package::Ros2DemoNode']]]
 ];

@@ -6,6 +6,5 @@ var searchData=
   ['actionhandleaccepted_3',['actionHandleAccepted',['../classros2__demo__package_1_1Ros2DemoNode.html#a600e1fe8328b15bc0bdf9848f21d9dd3',1,'ros2_demo_package::Ros2DemoNode']]],
   ['actionhandlecancel_4',['actionHandleCancel',['../classros2__demo__package_1_1Ros2DemoNode.html#abcbaf5d537252f471a83264a4f706f4c',1,'ros2_demo_package::Ros2DemoNode']]],
   ['actionhandlegoal_5',['actionHandleGoal',['../classros2__demo__package_1_1Ros2DemoNode.html#acfc711dc08b88da24848fea6acff05c5',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['auto_5freconfigurable_5fparams_5f_6',['auto_reconfigurable_params_',['../classros2__demo__package_1_1Ros2DemoNode.html#a879a177d252172fe51cbd4b6d6ad1291',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['available_20variables_7',['Available variables',['../md_doxygen-awesome-css_2docs_2customization.html#autotoc_md12',1,'']]]
+  ['auto_5freconfigurable_5fparams_5f_6',['auto_reconfigurable_params_',['../classros2__demo__package_1_1Ros2DemoNode.html#a879a177d252172fe51cbd4b6d6ad1291',1,'ros2_demo_package::Ros2DemoNode']]]
 ];

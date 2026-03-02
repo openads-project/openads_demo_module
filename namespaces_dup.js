@@ -1,5 +1,4 @@
 var namespaces_dup =
 [
-    [ "MyLibrary", "namespaceMyLibrary.html", "namespaceMyLibrary" ],
     [ "ros2_demo_package", "namespaceros2__demo__package.html", "namespaceros2__demo__package" ]
 ];
