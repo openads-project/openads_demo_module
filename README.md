@@ -1,14 +1,14 @@
 # ros2_demo_repository
 
 <p align="center">
-  <a href="https://openautomateddriving.github.io"><img src="https://img.shields.io/badge/OpenADS-ffff00"/></a>
-  <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/releases/latest"><img src="https://img.shields.io/github/v/release/OpenAutomatedDriving/ros2_demo_repository"/></a>
-  <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/blob/main/LICENSE"><img src="https://img.shields.io/github/license/OpenAutomatedDriving/ros2_demo_repository"/></a>
+  <a href="https://github.com/oads-org"><img src="https://img.shields.io/badge/OpenADS-ffff00"/></a>
+  <a href="https://github.com/oads-org/ros2_demo_repository/releases/latest"><img src="https://img.shields.io/github/v/release/oads-org/ros2_demo_repository"/></a>
+  <a href="https://github.com/oads-org/ros2_demo_repository/blob/main/LICENSE"><img src="https://img.shields.io/github/license/oads-org/ros2_demo_repository"/></a>
   <a href="https://www.ros.org"><img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/></a>
   <br>
-  <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
-  <a href="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
-  <a href="https://OpenAutomatedDriving.github.io/ros2_demo_repository"><img src="https://github.com/OpenAutomatedDriving/ros2_demo_repository/actions/workflows/docs.yml/badge.svg"/></a>
+  <a href="https://github.com/oads-org/ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
+  <a href="https://github.com/oads-org/ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
+  <a href="https://oads-org.github.io/ros2_demo_repository"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/docs.yml/badge.svg"/></a>
 </p>
 
 **Demo repository for an OpenADS module**
@@ -16,7 +16,7 @@
 This repository serves as a demo for an OpenADS module, showcasing the structure and documentation style for OpenADS packages. It includes a simple ROS 2 node that subscribes to a topic, processes the data, and publishes the result. This is a short description of the repository and its purpose.
 
 > [!IMPORTANT]  
-> This repository is part of [🚗 ***OpenADS***](https://github.com/OpenAutomatedDriving), the *Open Automated Driving Stack*.
+> This repository is part of [🚗 ***OpenADS***](https://github.com/oads-org), the *Open Automated Driving Stack*.
 
 **🚀 [Quick Start](#-quick-start)** | **🧑‍💻 [Development](#-development)** | **📝 [Documentation](#-documentation)** | **🙏 [Acknowledgements](#-acknowledgements)**
 
@@ -25,7 +25,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 1. Start a container of the pre-built runtime image.
     ```bash
-    docker run --rm -it ghcr.io/openautomateddriving/ros2_demo_repository:latest bash
+    docker run --rm -it ghcr.io/oads-org/ros2_demo_repository:latest bash
     ```
 1. Inside the container, launch the pre-built nodes.
     ```bash
@@ -38,9 +38,9 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 1. Clone the repository.
     ```bash
-    git clone https://github.com/OpenAutomatedDriving/ros2_demo_repository.git
+    git clone https://github.com/oads-org/ros2_demo_repository.git
     ```
-1. Initialize the [`.dev-environment`](https://github.com/OpenAutomatedDriving/dev-environment) submodule containing development environment configuration.
+1. Initialize the [`.openads-dev-environment`](https://github.com/oads-org/openads-dev-environment) submodule containing development environment configuration.
     ```bash
     cd ros2_demo_repository
     git submodule update --init --recursive
@@ -80,7 +80,7 @@ colcon test-result --verbose
 ## 📝 Documentation
 
 - [Implementation Details](./docs/IMPLEMENTATION.md)
-- [Source Code Documentation](https://openautomateddriving.github.io/ros2_demo_repository)
+- [Source Code Documentation](https://oads-org.github.io/ros2_demo_repository)
 - Package Documentation
   - [ros2_demo_package](ros2_demo_package/README.md)
   - [ros2_demo_package_interfaces](ros2_demo_package_interfaces/README.md)
