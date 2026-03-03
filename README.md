@@ -9,6 +9,7 @@
   <a href="https://github.com/oads-org/ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
   <a href="https://github.com/oads-org/ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
   <a href="https://oads-org.github.io/ros2_demo_repository"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/docs.yml/badge.svg"/></a>
+  <a href="https://github.com/oads-org/ros2_demo_repository/actions/workflows/consistency.yml"><img src="https://github.com/oads-org/ros2_demo_repository/actions/workflows/consistency.yml/badge.svg"/></a>
 </p>
 
 **Demo repository for an OpenADS module**
