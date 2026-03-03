@@ -1,3 +1,0 @@
-[submodule ".dev-environment"]
-	path = .dev-environment
-	url = ../dev-environment.git
