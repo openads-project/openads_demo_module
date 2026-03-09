@@ -1,7 +1,6 @@
 - add README for dev-env / remove READMEs from subfolders
 - add example/demo to quick start
 - add catchy GIF to README
-- add ruff linting/formatting for Python
 - add CI to run custom consistency checks
   - [x] README.md generator
   - [x] package.xml in folders, not on top-level
@@ -27,6 +26,10 @@
   - check package.xml deps
   - (re-generate package.xml/CMakeLists.txt?)
   - ...
+
+### Future Work
+
+- [ ] integrate ament_cmake_ruff (currently not available on apt)
 
 ### Repo settings
 
