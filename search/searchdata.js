@@ -1,12 +1,12 @@
 var indexSectionsWithContent =
 {
-  0: "abdehikmpqrstu📝🙏🚀🧑",
+  0: "abdehikmopqrstu📝🙏🚀🧑",
   1: "dirt",
   2: "r",
   3: "ir",
   4: "adhmprst",
   5: "adhikmpst",
-  6: "dir"
+  6: "dio"
 };
 
 var indexSectionNames =

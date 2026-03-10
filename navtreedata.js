@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "ros2_demo_repository", "index.html", [
+  [ "openads_ros2_demo_repository", "index.html", [
     [ "🚀 Quick Start", "index.html#autotoc_md1", null ],
     [ "🧑‍💻 Development", "index.html#autotoc_md2", [
       [ "Set up Development Environment", "index.html#autotoc_md3", null ],
