@@ -3,8 +3,7 @@
   - [ ] ... IMPLEMENTATION.md
   - [ ] .env exists for docker-ros build vars
   - [ ] GitLab CI exists?
-- LICENSE.md
-- CHANGELOG.md
+- (CHANGELOG.md)
 - (CONTRIBUTING.md)
 - search for TODO
 
