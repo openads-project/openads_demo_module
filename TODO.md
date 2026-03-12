@@ -3,15 +3,10 @@
   - [ ] ... IMPLEMENTATION.md
   - [ ] .env exists for docker-ros build vars
   - [ ] GitLab CI exists?
-- is there still something like catkin_lint for package.xml or similar?
 - LICENSE.md
 - CHANGELOG.md
 - (CONTRIBUTING.md)
 - search for TODO
-
-### Future Work
-
-- [ ] pre-commit should work out-of-the-box in devcontainer
 
 ### Work Elsewhere
 
