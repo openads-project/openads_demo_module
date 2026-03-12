@@ -12,7 +12,6 @@
 ### Future Work
 
 - [ ] pre-commit should work out-of-the-box in devcontainer
-- [ ] integrate ament_cmake_ruff (currently not available on apt)
 
 ### Work Elsewhere
 
