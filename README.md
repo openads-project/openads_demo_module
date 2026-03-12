@@ -1,15 +1,15 @@
 # openads_ros2_demo_repository
 
 <p align="center">
-  <a href="https://github.com/oads-org"><img src="https://img.shields.io/badge/OpenADS-ffff00"/></a>
-  <a href="https://github.com/oads-org/openads_ros2_demo_repository/releases/latest"><img src="https://img.shields.io/github/v/release/oads-org/openads_ros2_demo_repository"/></a>
-  <a href="https://github.com/oads-org/openads_ros2_demo_repository/blob/main/LICENSE"><img src="https://img.shields.io/github/license/oads-org/openads_ros2_demo_repository"/></a>
+  <a href="https://github.com/openads-project"><img src="https://img.shields.io/badge/OpenADS-ffff00"/></a>
   <a href="https://www.ros.org"><img src="https://img.shields.io/badge/ROS 2-jazzy-22314e"/></a>
+  <a href="https://github.com/openads-project/openads_ros2_demo_repository/releases/latest"><img src="https://img.shields.io/github/v/release/openads-project/openads_ros2_demo_repository"/></a>
+  <a href="https://github.com/openads-project/openads_ros2_demo_repository/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openads-project/openads_ros2_demo_repository"/></a>
   <br>
-  <a href="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
-  <a href="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
-  <a href="https://oads-org.github.io/openads_ros2_demo_repository"><img src="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/docs.yml/badge.svg"/></a>
-  <a href="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/consistency.yml"><img src="https://github.com/oads-org/openads_ros2_demo_repository/actions/workflows/consistency.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/docker-ros.yml"><img src="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/docker-ros.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/industrial_ci.yml"><img src="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/industrial_ci.yml/badge.svg"/></a>
+  <a href="https://openads-project.github.io/openads_ros2_demo_repository"><img src="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/docs.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/consistency.yml"><img src="https://github.com/openads-project/openads_ros2_demo_repository/actions/workflows/consistency.yml/badge.svg"/></a>
 </p>
 
 **Demo repository for an OpenADS module**
@@ -19,7 +19,8 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 **🚀 [Quick Start](#-quick-start)** | **🧑‍💻 [Development](#-development)** | **📝 [Documentation](#-documentation)** | **🙏 [Acknowledgements](#-acknowledgements)**
 
 > [!IMPORTANT]  
-> This repository is part of [🚗 ***OpenADS***](https://github.com/oads-org), the *Open Automated Driving Stack*.
+> This repository is part of [🚗 ***OpenADS***](https://github.com/openads-project), the *Open Automated Driving Stack*.
+
 
 <img src="https://raw.githubusercontent.com/ika-rwth-aachen/etsi_its_messages/refs/heads/main/assets/teaser.gif" width=800>
 
@@ -28,7 +29,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 1. Start a container of the pre-built runtime image.
     ```bash
-    docker run --rm -it ghcr.io/oads-org/openads_ros2_demo_repository:latest bash
+    docker run --rm -it ghcr.io/openads-project/openads_ros2_demo_repository:latest bash
     ```
 1. Inside the container, launch the pre-built nodes.
     ```bash
@@ -41,9 +42,9 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 
 1. Clone the repository.
     ```bash
-    git clone https://github.com/oads-org/openads_ros2_demo_repository.git
+    git clone https://github.com/openads-project/openads_ros2_demo_repository.git
     ```
-1. Initialize the [`.openads-dev-environment`](https://github.com/oads-org/openads-dev-environment) submodule containing development environment configuration.
+1. Initialize the [`.openads-dev-environment`](https://github.com/openads-project/openads-dev-environment) submodule containing development environment configuration.
     ```bash
     cd openads_ros2_demo_repository
     git submodule update --init --recursive
@@ -83,7 +84,7 @@ colcon test-result --verbose
 ## 📝 Documentation
 
 - [Implementation Details](./docs/IMPLEMENTATION.md)
-- [Source Code Documentation](https://oads-org.github.io/openads_ros2_demo_repository)
+- [Source Code Documentation](https://openads-project.github.io/openads_ros2_demo_repository)
 - Package Documentation
   - [ros2_demo_package](ros2_demo_package/README.md)
   - [ros2_demo_package_interfaces](ros2_demo_package_interfaces/README.md)

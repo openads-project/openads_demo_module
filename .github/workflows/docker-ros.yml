@@ -1,8 +1,12 @@
 name: docker-ros
 
-# TODO: what is the best setup for PR workflows? see https://github.com/ika-rwth-aachen/etsi_its_messages/blob/main/.github/workflows/docker-ros.yml?
 on:
   push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -13,6 +17,11 @@ jobs:
         with:
           platform: amd64
           target: dev,run
-          base-image: rwthika/ros2:latest
-          command: ros2 run ros2_demo_package ros2_demo_node
+          base-image: rwthika/ros2:jazzy
+          rmw-implementation: rmw_zenoh_cpp
+          command: ros2 launch my_package my_launch_file.launch.py
+          enable-recursive-vcs-import: false
           enable-slim: false
+          enable-industrial-ci: true
+        env:
+          TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1
