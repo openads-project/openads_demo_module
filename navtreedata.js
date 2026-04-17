@@ -34,9 +34,7 @@ var NAVTREE =
     [ "📝 Documentation", "index.html#autotoc_md6", null ],
     [ "🙏 Acknowledgements", "index.html#autotoc_md7", null ],
     [ "CONTRIBUTIONS", "md_docs_2CONTRIBUTIONS.html", null ],
-    [ "Implementation Details", "md_docs_2IMPLEMENTATION.html", [
-      [ "Contributions", "md_docs_2IMPLEMENTATION.html#autotoc_md9", null ]
-    ] ],
+    [ "Implementation Details", "md_docs_2IMPLEMENTATION.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [

@@ -80,7 +80,6 @@ var NAVTREEINDEX0 =
 "index.html#autotoc_md7":[3],
 "md_docs_2CONTRIBUTIONS.html":[4],
 "md_docs_2IMPLEMENTATION.html":[5],
-"md_docs_2IMPLEMENTATION.html#autotoc_md9":[5,0],
 "namespacemembers.html":[6,1,0],
 "namespacemembers_vars.html":[6,1,1],
 "namespaceros2__demo__package.html":[6,0,0],
