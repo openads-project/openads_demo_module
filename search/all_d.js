@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['tests_0',['Run Tests',['../index.html#autotoc_md5',1,'']]],
-  ['timer_5f_1',['timer_',['../classros2__demo__package_1_1Ros2DemoNode.html#ad0b301caf2311d594f63cfc404b544d6',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['timercallback_2',['timerCallback',['../classros2__demo__package_1_1Ros2DemoNode.html#a4040279ad208dd9e0040067cf26709f0',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['topic_5fdiagnostic_5f_3',['topic_diagnostic_',['../classros2__demo__package_1_1Ros2DemoNode.html#a1f647a543a6b0d800d4ec786cbbe37b9',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['topic_5fdiagnostic_5fconfig_5f_4',['topic_diagnostic_config_',['../classros2__demo__package_1_1Ros2DemoNode.html#a80aab337facd4d24655003954c61f347',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['topiccallback_5',['topicCallback',['../classros2__demo__package_1_1Ros2DemoNode.html#a6287c732078c82c602e20ada966f2929',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['topicdiagnosticconfig_6',['TopicDiagnosticConfig',['../structros2__demo__package_1_1TopicDiagnosticConfig.html',1,'ros2_demo_package']]]
+  ['service_5fserver_5f_0',['service_server_',['../classros2__demo__package_1_1Ros2DemoNode.html#a05be87761b01cd27463561c8203416e7',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['servicecallback_1',['serviceCallback',['../classros2__demo__package_1_1Ros2DemoNode.html#a7924a169d4357bfcd7bfab54ed7e988c',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['set_20up_20development_20environment_2',['Set up Development Environment',['../index.html#autotoc_md3',1,'']]],
+  ['sethealth_3',['setHealth',['../classros2__demo__package_1_1Ros2DemoNode.html#a1e2fd41433cfbd6458f6e7f1368ceb68',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['setup_4',['setup',['../classros2__demo__package_1_1Ros2DemoNode.html#a82fc774ca948972fe7ef6ad9523e8fd2',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['start_5',['🚀 Quick Start',['../index.html#autotoc_md1',1,'']]],
+  ['status_6',['status',['../structros2__demo__package_1_1Ros2DemoNode_1_1DiagnosticStatus.html#a19a8d13f979d2b6172017fcd91c1d04e',1,'ros2_demo_package::Ros2DemoNode::DiagnosticStatus']]],
+  ['subscriber_5f_7',['subscriber_',['../classros2__demo__package_1_1Ros2DemoNode.html#af194473eedc6a854a5b12da145413afa',1,'ros2_demo_package::Ros2DemoNode']]]
 ];

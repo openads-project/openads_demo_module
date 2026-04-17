@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['openads_5fros2_5fdemo_5frepository_0',['openads_ros2_demo_repository',['../index.html',1,'']]]
+  ['implementation_20details_0',['Implementation Details',['../md_docs_2IMPLEMENTATION.html',1,'']]]
 ];
