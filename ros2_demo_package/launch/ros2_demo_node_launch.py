@@ -13,6 +13,7 @@ from launch_ros.actions import Node, SetParameter
 
 
 def generate_launch_description():
+    """Generate the launch description for the ros2_demo_node."""
 
     remappable_topics = [
         DeclareLaunchArgument("input_topic", default_value="~/input"),
