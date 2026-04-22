@@ -84,7 +84,7 @@ Package and node interfaces are documented in the respective package READMEs lis
 
 | Package | Description |
 | --- | --- |
-| [ros2_demo_package](ros2_demo_package/README.md) | TODO |
+| [ros2_demo_package](ros2_demo_package/README.md) | ROS 2 demo package |
 | [ros2_demo_package_interfaces](ros2_demo_package_interfaces/README.md) | ROS interface definitions for ros2_demo_package |
 
 ## ⚖️ Licensing
@@ -97,7 +97,7 @@ Development and maintenance of this repository are supported by the following pr
 
 | Project | Funding Institution | Grant Number |
 | --- | --- | --- |
-| TODO | TODO | TODO |
+| Demo Project | Demo Funding Institution | Demo Grant Number |
 
 <p>
   <img src="https://www.drought.uni-freiburg.de/stressres/images/bmftr-logo/image" height=70>

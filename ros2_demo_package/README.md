@@ -1,6 +1,6 @@
 # `ros2_demo_package`
 
-TODO
+ROS 2 demo package
 
 ## Nodes
 
@@ -20,31 +20,31 @@ flowchart LR
 
 | Topic | Type | Description |
 | --- | --- | --- |
-| `~/input` | `geometry_msgs/msg/PointStamped` | TODO |
+| `~/input` | `geometry_msgs/msg/PointStamped` | input point |
 
 #### Published Topics
 
 | Topic | Type | Description |
 | --- | --- | --- |
-| `~/output` | `geometry_msgs/msg/PointStamped` | TODO |
+| `~/output` | `geometry_msgs/msg/PointStamped` | output point |
 
 #### Service Servers
 
 | Service | Type | Description |
 | --- | --- | --- |
-| `~/service` | `std_srvs/srv/SetBool` | TODO |
+| `~/service` | `std_srvs/srv/SetBool` | demo service |
 
 #### Action Servers
 
 | Action | Type | Description |
 | --- | --- | --- |
-| `~/action` | `ros2_demo_package_interfaces/action/Fibonacci` | TODO |
+| `~/action` | `ros2_demo_package_interfaces/action/Fibonacci` | demo action |
 
 #### Parameters
 
 | Parameter | Type | Default | Description |
 | --- | --- | --- | --- |
-| `param` | `float` | `1.0` | TODO |
+| `param` | `float` | `1.0` | demo parameter |
 
 ## Launch Files
 
