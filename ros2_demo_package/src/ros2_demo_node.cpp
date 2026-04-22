@@ -272,7 +272,7 @@ void Ros2DemoNode::actionExecute(
 void Ros2DemoNode::timerCallback() {
   RCLCPP_INFO(this->get_logger(), "Timer triggered");
 
-  // TODO: Remove this demonstration of health status and implement real health checks using `setHealth()`
+  // TODO(unknown): Remove this demonstration of health status and implement real health checks using `setHealth()`
   if (health_.status == diagnostic_msgs::msg::DiagnosticStatus::ERROR) {
     setHealth(diagnostic_msgs::msg::DiagnosticStatus::ERROR,
               "Node is non-functional, unable to obtain, and/or yielding implausible data.",
