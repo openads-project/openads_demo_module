@@ -2,10 +2,6 @@
 
 TODO
 
-- [Nodes](#nodes)
-  - [ros2_demo_node](#ros2_demo_node)
-- [Launch Files](#launch-files)
-
 ## Nodes
 
 ### `ros2_demo_node`
@@ -24,25 +20,25 @@ flowchart LR
 
 | Topic | Type | Description |
 | --- | --- | --- |
-| `~/input` | `geometry_msgs/msg/PointStamped` | |
+| `~/input` | `geometry_msgs/msg/PointStamped` | TODO |
 
 #### Published Topics
 
 | Topic | Type | Description |
 | --- | --- | --- |
-| `~/output` | `geometry_msgs/msg/PointStamped` | |
+| `~/output` | `geometry_msgs/msg/PointStamped` | TODO |
 
 #### Service Servers
 
 | Service | Type | Description |
 | --- | --- | --- |
-| `~/service` | `std_srvs/srv/SetBool` | |
+| `~/service` | `std_srvs/srv/SetBool` | TODO |
 
 #### Action Servers
 
 | Action | Type | Description |
 | --- | --- | --- |
-| `~/action` | `ros2_demo_package_interfaces/action/Fibonacci` | |
+| `~/action` | `ros2_demo_package_interfaces/action/Fibonacci` | TODO |
 
 #### Parameters
 
@@ -56,11 +52,11 @@ flowchart LR
 
 | Argument | Default | Description |
 | --- | --- | --- |
-| `input_topic` | `"~/input"` |  |
-| `output_topic` | `"~/output"` |  |
-| `service` | `"~/service"` |  |
+| `input_topic` | `"~/input"` | input topic |
+| `output_topic` | `"~/output"` | output topic |
+| `service` | `"~/service"` | service topic |
 | `name` | `"ros2_demo_node"` | node name |
 | `namespace` | `""` | node namespace |
-| `params` | `os.path.join(get_package_share_directory("ros2_demo_package"), "config", "params.yml")` | path to parameter file |
-| `log_level` | `"info"` | ROS logging level (debug, info, warn, error, fatal) |
-| `use_sim_time` | `"false"` | use simulation clock |
+| `params` | `os.path.join(get_package_share_directory("ros2_demo_package"), "config", "params.yml")` | parameter file |
+| `log_level` | `"info"` | ros logging level |
+| `use_sim_time` | `"false"` | use simulation time |
