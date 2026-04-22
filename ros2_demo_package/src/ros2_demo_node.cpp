@@ -11,24 +11,20 @@ namespace ros2_demo_package {
 
 Ros2DemoNode::Ros2DemoNode() : Node("ros2_demo_node") {
   this->declareAndLoadParameter("param", param_, "demo parameter", true, false, false, 0.0, 10.0, 1.0);
-  this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.min_frequency",
-                                topic_diagnostic_config_.min_frequency, "Minimum frequency for incoming messages", true,
-                                true, false);
-  this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.max_frequency",
-                                topic_diagnostic_config_.max_frequency, "Maximum frequency for incoming messages", true,
-                                true, false);
+  this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.min_frequency", topic_diagnostic_config_.min_frequency,
+                                "Minimum frequency for incoming messages", true, true, false);
+  this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.max_frequency", topic_diagnostic_config_.max_frequency,
+                                "Maximum frequency for incoming messages", true, true, false);
   this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.min_acceptable_timestamp_delta",
                                 topic_diagnostic_config_.min_acceptable_timestamp_delta,
                                 "Minimum acceptable timestamp delta for incoming messages", true, true, false);
   this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.max_acceptable_timestamp_delta",
                                 topic_diagnostic_config_.max_acceptable_timestamp_delta,
                                 "Maximum acceptable timestamp delta for incoming messages", true, true, false);
-  this->declareAndLoadParameter("diagnostic_updater.diagnosed_publisher.min_frequency",
-                                diagnosed_publisher_config_.min_frequency, "Minimum frequency for outgoing messages",
-                                true, true, false);
-  this->declareAndLoadParameter("diagnostic_updater.diagnosed_publisher.max_frequency",
-                                diagnosed_publisher_config_.max_frequency, "Maximum frequency for outgoing messages",
-                                true, true, false);
+  this->declareAndLoadParameter("diagnostic_updater.diagnosed_publisher.min_frequency", diagnosed_publisher_config_.min_frequency,
+                                "Minimum frequency for outgoing messages", true, true, false);
+  this->declareAndLoadParameter("diagnostic_updater.diagnosed_publisher.max_frequency", diagnosed_publisher_config_.max_frequency,
+                                "Maximum frequency for outgoing messages", true, true, false);
   this->declareAndLoadParameter("diagnostic_updater.diagnosed_publisher.min_acceptable_timestamp_delta",
                                 diagnosed_publisher_config_.min_acceptable_timestamp_delta,
                                 "Minimum acceptable timestamp delta for outgoing messages", true, true, false);
@@ -39,9 +35,13 @@ Ros2DemoNode::Ros2DemoNode() : Node("ros2_demo_node") {
 }
 
 template <typename T>
-void Ros2DemoNode::declareAndLoadParameter(const std::string& name, T& param, const std::string& description,
-                                           const bool add_to_auto_reconfigurable_params, const bool is_required,
-                                           const bool read_only, const std::optional<double>& from_value,
+void Ros2DemoNode::declareAndLoadParameter(const std::string& name,
+                                           T& param,
+                                           const std::string& description,
+                                           const bool add_to_auto_reconfigurable_params,
+                                           const bool is_required,
+                                           const bool read_only,
+                                           const std::optional<double>& from_value,
                                            const std::optional<double>& to_value,
                                            const std::optional<double>& step_value,
                                            const std::string& additional_constraints) {
@@ -64,8 +64,7 @@ void Ros2DemoNode::declareAndLoadParameter(const std::string& name, T& param, co
       if (step_value.has_value()) range.set__step(static_cast<T>(step_value.value()));
       param_desc.floating_point_range = {range};
     } else {
-      RCLCPP_WARN(this->get_logger(), "Parameter type of parameter '%s' does not support specifying a range",
-                  name.c_str());
+      RCLCPP_WARN(this->get_logger(), "Parameter type of parameter '%s' does not support specifying a range", name.c_str());
     }
   }
 
@@ -103,15 +102,12 @@ void Ros2DemoNode::declareAndLoadParameter(const std::string& name, T& param, co
   }
 
   if (add_to_auto_reconfigurable_params) {
-    std::function<void(const rclcpp::Parameter&)> setter = [&param](const rclcpp::Parameter& p) {
-      param = p.get_value<T>();
-    };
+    std::function<void(const rclcpp::Parameter&)> setter = [&param](const rclcpp::Parameter& p) { param = p.get_value<T>(); };
     auto_reconfigurable_params_.push_back(std::make_tuple(name, setter));
   }
 }
 
-rcl_interfaces::msg::SetParametersResult Ros2DemoNode::parametersCallback(
-    const std::vector<rclcpp::Parameter>& parameters) {
+rcl_interfaces::msg::SetParametersResult Ros2DemoNode::parametersCallback(const std::vector<rclcpp::Parameter>& parameters) {
   for (const auto& param : parameters) {
     for (auto& auto_reconfigurable_param : auto_reconfigurable_params_) {
       if (param.get_name() == std::get<0>(auto_reconfigurable_param)) {
@@ -165,9 +161,8 @@ void Ros2DemoNode::setup() {
       std::ceil(5 / (diagnostic_updater_.getPeriod().seconds() * topic_diagnostic_config_.min_frequency));
   topic_diagnostic_ = std::make_unique<diagnostic_updater::TopicDiagnostic>(
       "~/input", diagnostic_updater_,
-      diagnostic_updater::FrequencyStatusParam(&topic_diagnostic_config_.min_frequency,
-                                               &topic_diagnostic_config_.max_frequency, 0.0,
-                                               topic_diagnostic_frequency_window_size),
+      diagnostic_updater::FrequencyStatusParam(&topic_diagnostic_config_.min_frequency, &topic_diagnostic_config_.max_frequency,
+                                               0.0, topic_diagnostic_frequency_window_size),
       diagnostic_updater::TimeStampStatusParam(topic_diagnostic_config_.min_acceptable_timestamp_delta,
                                                topic_diagnostic_config_.max_acceptable_timestamp_delta));
 
@@ -214,8 +209,7 @@ rclcpp_action::GoalResponse Ros2DemoNode::actionHandleGoal(
 }
 
 rclcpp_action::CancelResponse Ros2DemoNode::actionHandleCancel(
-    const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>>
-        goal_handle) {
+    const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle) {
   (void)goal_handle;
 
   RCLCPP_INFO(this->get_logger(), "Received request to cancel action goal");
@@ -224,15 +218,13 @@ rclcpp_action::CancelResponse Ros2DemoNode::actionHandleCancel(
 }
 
 void Ros2DemoNode::actionHandleAccepted(
-    const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>>
-        goal_handle) {
+    const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle) {
   // execute action in a separate thread to avoid blocking
   std::thread{std::bind(&Ros2DemoNode::actionExecute, this, std::placeholders::_1), goal_handle}.detach();
 }
 
 void Ros2DemoNode::actionExecute(
-    const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>>
-        goal_handle) {
+    const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle) {
   RCLCPP_INFO(this->get_logger(), "Executing action goal");
 
   // define a sleeping rate between computing individual Fibonacci numbers
@@ -287,9 +279,8 @@ void Ros2DemoNode::timerCallback() {
               {{"uptime", std::to_string(this->get_clock()->now().seconds())}});
     health_.status = diagnostic_msgs::msg::DiagnosticStatus::WARN;
   } else if (health_.status == diagnostic_msgs::msg::DiagnosticStatus::WARN) {
-    setHealth(
-        diagnostic_msgs::msg::DiagnosticStatus::WARN,
-        "Node is able to assess its own performance level, but is not able to reach its desired performance level.");
+    setHealth(diagnostic_msgs::msg::DiagnosticStatus::WARN,
+              "Node is able to assess its own performance level, but is not able to reach its desired performance level.");
     health_.status = diagnostic_msgs::msg::DiagnosticStatus::OK;
   } else if (health_.status == diagnostic_msgs::msg::DiagnosticStatus::OK) {
     setHealth(diagnostic_msgs::msg::DiagnosticStatus::OK,
@@ -309,7 +300,8 @@ void Ros2DemoNode::health(diagnostic_updater::DiagnosticStatusWrapper& stat) {
   }
 }
 
-void Ros2DemoNode::setHealth(const unsigned char status, const std::string& msg,
+void Ros2DemoNode::setHealth(const unsigned char status,
+                             const std::string& msg,
                              const std::map<std::string, std::string>& key_value_pairs) {
   health_.status = status;
   health_.message = msg;
@@ -333,8 +325,7 @@ int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<ros2_demo_package::Ros2DemoNode>();
   rclcpp::executors::SingleThreadedExecutor executor;
-  RCLCPP_INFO(node->get_logger(), "Spinning node '%s' with %s", node->get_fully_qualified_name(),
-              "SingleThreadedExecutor");
+  RCLCPP_INFO(node->get_logger(), "Spinning node '%s' with %s", node->get_fully_qualified_name(), "SingleThreadedExecutor");
   executor.add_node(node);
   executor.spin();
   rclcpp::shutdown();

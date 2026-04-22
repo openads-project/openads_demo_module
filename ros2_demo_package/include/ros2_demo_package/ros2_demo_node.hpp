@@ -55,13 +55,13 @@ struct TopicDiagnosticConfig {
  */
 class Ros2DemoNode : public rclcpp::Node {
  public:
- /**
-  * @brief Constructs a new Ros2DemoNode instance.
-  *
-  * Creates and initializes the ROS 2 demo node, including its core
-  * communication interfaces (such as publishers, subscribers, timers,
-  * or parameters) as configured by the implementation.
-  */
+  /**
+   * @brief Constructs a new Ros2DemoNode instance.
+   *
+   * Creates and initializes the ROS 2 demo node, including its core
+   * communication interfaces (such as publishers, subscribers, timers,
+   * or parameters) as configured by the implementation.
+   */
   Ros2DemoNode();
 
  private:
@@ -80,9 +80,13 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param additional_constraints additional constraints description
    */
   template <typename T>
-  void declareAndLoadParameter(const std::string& name, T& param, const std::string& description,
-                               const bool add_to_auto_reconfigurable_params = true, const bool is_required = false,
-                               const bool read_only = false, const std::optional<double>& from_value = std::nullopt,
+  void declareAndLoadParameter(const std::string& name,
+                               T& param,
+                               const std::string& description,
+                               const bool add_to_auto_reconfigurable_params = true,
+                               const bool is_required = false,
+                               const bool read_only = false,
+                               const std::optional<double>& from_value = std::nullopt,
                                const std::optional<double>& to_value = std::nullopt,
                                const std::optional<double>& step_value = std::nullopt,
                                const std::string& additional_constraints = "");
@@ -123,9 +127,8 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param goal action goal
    * @return goal response
    */
-  rclcpp_action::GoalResponse actionHandleGoal(
-      const rclcpp_action::GoalUUID& uuid,
-      std::shared_ptr<const ros2_demo_package_interfaces::action::Fibonacci::Goal> goal);
+  rclcpp_action::GoalResponse actionHandleGoal(const rclcpp_action::GoalUUID& uuid,
+                                               std::shared_ptr<const ros2_demo_package_interfaces::action::Fibonacci::Goal> goal);
 
   /**
    * @brief Processes action cancel requests
@@ -134,8 +137,7 @@ class Ros2DemoNode : public rclcpp::Node {
    * @return cancel response
    */
   rclcpp_action::CancelResponse actionHandleCancel(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>>
-          goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Processes accepted action goal requests
@@ -143,8 +145,7 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param goal_handle action goal handle
    */
   void actionHandleAccepted(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>>
-          goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Executes an action
@@ -152,8 +153,7 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param goal_handle action goal handle
    */
   void actionExecute(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>>
-          goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Processes timer triggers
@@ -168,7 +168,8 @@ class Ros2DemoNode : public rclcpp::Node {
   /**
    * @brief Sets the health information and triggers publishing by diagnostic updater
    */
-  void setHealth(const unsigned char status, const std::string& msg,
+  void setHealth(const unsigned char status,
+                 const std::string& msg,
                  const std::map<std::string, std::string>& key_value_pairs = {});
 
  private:
