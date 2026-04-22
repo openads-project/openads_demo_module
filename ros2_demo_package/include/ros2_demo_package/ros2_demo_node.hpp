@@ -55,6 +55,13 @@ struct TopicDiagnosticConfig {
  */
 class Ros2DemoNode : public rclcpp::Node {
  public:
+ /**
+  * @brief Constructs a new Ros2DemoNode instance.
+  *
+  * Creates and initializes the ROS 2 demo node, including its core
+  * communication interfaces (such as publishers, subscribers, timers,
+  * or parameters) as configured by the implementation.
+  */
   Ros2DemoNode();
 
  private:

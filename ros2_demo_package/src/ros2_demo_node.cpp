@@ -319,6 +319,16 @@ void Ros2DemoNode::setHealth(const unsigned char status, const std::string& msg,
 
 }  // namespace ros2_demo_package
 
+/**
+ * @brief Entry point for the ROS2 demo node.
+ *
+ * Initializes the ROS2 context, creates an instance of the Ros2DemoNode,
+ * and spins it using a SingleThreadedExecutor until the node is shutdown.
+ *
+ * @param argc Number of command line arguments.
+ * @param argv Array of command line arguments.
+ * @return int Returns 0 upon successful execution.
+ */
 int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<ros2_demo_package::Ros2DemoNode>();
