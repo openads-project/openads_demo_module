@@ -7,6 +7,7 @@
   <a href="https://github.com/openads-project/openads_demo_module/blob/main/LICENSE"><img src="https://img.shields.io/github/license/openads-project/openads_demo_module"/></a>
   <br>
   <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/docker-ros.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/docker-ros.yml/badge.svg"/></a>
+  <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/compose-oci.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/compose-oci.yml/badge.svg"/></a>
   <a href="https://openads-project.github.io/openads_demo_module"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/docs.yml/badge.svg"/></a>
   <a href="https://github.com/openads-project/openads_demo_module/actions/workflows/consistency.yml"><img src="https://github.com/openads-project/openads_demo_module/actions/workflows/consistency.yml/badge.svg"/></a>
 </p>
