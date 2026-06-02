@@ -7,6 +7,4 @@ on:
 jobs:
   consistency:
     uses: openads-project/openads-dev-environment/.github/workflows/consistency.yml@consistency-forks
-    with:
-      skip-checks: dev_environment_at_remote_main
     secrets: inherit
