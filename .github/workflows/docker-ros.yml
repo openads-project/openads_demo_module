@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
   pull_request:
     branches:
       - main
@@ -19,9 +21,7 @@ jobs:
           target: dev,run
           base-image: rwthika/ros2:jazzy
           rmw-implementation: rmw_zenoh_cpp
-          command: ros2 launch my_package my_launch_file.launch.py
-          enable-recursive-vcs-import: false
-          enable-slim: false
+          command: ros2 launch ros2_demo_package ros2_demo_node_launch.py
           enable-industrial-ci: true
         env:
           TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1
