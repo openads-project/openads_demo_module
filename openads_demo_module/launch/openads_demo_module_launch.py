@@ -10,6 +10,7 @@ from launch_ros.actions import Node, SetParameter
 
 
 def generate_launch_description():
+    """Generate the launch description for the openads_demo_module node."""
 
     remappable_topics = [
         DeclareLaunchArgument("input_topic", default_value="~/input"),
