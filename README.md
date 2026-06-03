@@ -16,22 +16,24 @@
 
 This repository serves as a demo for an OpenADS module, showcasing the structure and documentation style for OpenADS packages. It includes a simple ROS 2 node that subscribes to a topic, processes the data, and publishes the result. This is a short description of the repository and its purpose.
 
-<img src="https://raw.githubusercontent.com/ika-rwth-aachen/etsi_its_messages/refs/heads/main/assets/teaser.gif" width=800>
-
 <p align="center">
   <strong>🚀 <a href="#-quick-start">Quick Start</a></strong> • <strong>💻 <a href="#-development">Development</a></strong> • <strong>📝 <a href="#-documentation">Documentation</a></strong>
 </p>
+
+
+> [!IMPORTANT]
+> This repository is part of [***OpenADS***](https://github.com/openads-project), the *Open Automated Driving Systems* project. *OpenADS* and its modules have been initiated and are currently being maintained by the [**Institute for Automotive Engineering (ika) at RWTH Aachen University**](https://www.ika.rwth-aachen.de/de/).
 
 
 ## 🚀 Quick Start
 
 1. Start a container of the pre-built runtime image.
     ```bash
-    docker run --rm -it ghcr.io/openads-project/openads_ros2_demo_repository:latest bash
+    docker run --rm -it ghcr.io/openads-project/openads_demo_module:latest bash
     ```
 1. Inside the container, launch the pre-built nodes.
     ```bash
-    ros2 launch ros2_demo_package ros2_demo_node_launch.py
+    ros2 launch openads_demo_module openads_demo_module_launch.py
     ```
 
 ## 💻 Development
@@ -89,9 +91,6 @@ Package and node interfaces are documented in the respective package READMEs lis
 The source code in this repository is licensed under Apache-2.0, see [LICENSE](LICENSE). Container images provided by this repository may contain third-party software shipped with their own license terms.
 
 ## 🙏 Acknowledgements
-
-> [!IMPORTANT]
-> This repository is part of [***OpenADS***](https://github.com/openads-project), the *Open Automated Driving Systems* project. *OpenADS* and its modules have been initiated and are currently being maintained by the [**Institute for Automotive Engineering (ika) at RWTH Aachen University**](https://www.ika.rwth-aachen.de/de/).
 
 Development and maintenance of this repository are supported by the following projects. We acknowledge the funding of the respective institutions.
 
