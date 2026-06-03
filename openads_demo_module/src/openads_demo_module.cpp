@@ -1,3 +1,6 @@
+// Copyright Institute for Automotive Engineering (ika), RWTH Aachen University
+// SPDX-License-Identifier: Apache-2.0
+
 #include <chrono>
 #include <functional>
 #include <thread>
@@ -7,7 +10,7 @@
 namespace openads_demo_module {
 
 OpenadsDemoModule::OpenadsDemoModule() : Node("openads_demo_module") {
-  this->declareAndLoadParameter("param", param_, "TODO", true, false, false, 0.0, 10.0, 1.0);
+  this->declareAndLoadParameter("param", param_, "Demo parameter", true, false, false, 0.0, 10.0, 1.0);
   this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.min_frequency", topic_diagnostic_config_.min_frequency,
                                 "Minimum frequency for incoming messages", true, true, false);
   this->declareAndLoadParameter("diagnostic_updater.topic_diagnostic.max_frequency", topic_diagnostic_config_.max_frequency,

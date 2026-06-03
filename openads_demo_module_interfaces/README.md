@@ -1,7 +1,6 @@
-# openads_demo_module_interfaces
+# `openads_demo_module_interfaces`
 
 ROS interface definitions for openads_demo_module
-
 
 ### Messages
 
@@ -20,3 +19,9 @@ ROS interface definitions for openads_demo_module
 | Type | Description |
 | --- | --- |
 |  |  |
+
+## Actions
+
+| Type | Description |
+| --- | --- |
+| [`openads_demo_module_interfaces/action/Fibonacci`](action/Fibonacci.action) | Demo action |

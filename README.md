@@ -81,8 +81,8 @@ Package and node interfaces are documented in the respective package READMEs lis
 
 | Package | Description |
 | --- | --- |
-| [ros2_demo_package](ros2_demo_package/README.md) | ROS 2 demo package |
-| [ros2_demo_package_interfaces](ros2_demo_package_interfaces/README.md) | ROS interface definitions for ros2_demo_package |
+| [openads_demo_module](openads_demo_module/README.md) | ROS 2 C++ package template for OpenADS |
+| [openads_demo_module_interfaces](openads_demo_module_interfaces/README.md) | ROS interface definitions for openads_demo_module |
 
 ## ⚖️ Licensing
 
