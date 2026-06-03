@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+
+  <name>openads_demo_module</name>
+  <version>0.0.0</version>
+  <description>ROS 2 C++ package template for OpenADS</description>
+
+  <maintainer email="opensource@ika.rwth-aachen.de">Institute for Automotive Engineering (ika), RWTH Aachen University</maintainer>
+  <author email="opensource@ika.rwth-aachen.de">Institute for Automotive Engineering (ika), RWTH Aachen University</author>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>diagnostic_updater</depend>
+  <depend>geometry_msgs</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_action</depend>
+  <depend>std_srvs</depend>
+  <depend>openads_demo_module_interfaces</depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
