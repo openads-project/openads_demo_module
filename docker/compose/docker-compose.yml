@@ -1,7 +1,7 @@
 services:
 
   openads-demo-module:
-    image: ghcr.io/openads-project/openads_demo_module:latest_update-forks_ci
+    image: ghcr.io/openads-project/openads_demo_module:v1.0.0
     environment:
       # --- name ------
       NAMESPACE: /
@@ -10,13 +10,11 @@ services:
       INPUT_TOPIC: ~/input
       # --- outputs ---
       OUTPUT_TOPIC: ~/output
-      # --- services ---
-      SERVICE_TOPIC: ~/service
       # --- other -----
+      SERVICE_TOPIC: ~/service
       LOG_LEVEL: ${LOG_LEVEL:-info}
       USE_SIM_TIME: ${USE_SIM_TIME:-false}
       PARAMS: ${PARAMS:-/docker-ros/ws/install/openads_demo_module/share/openads_demo_module/config/params.yml}
-      DRIVING_MODE: ${DRIVING_MODE:-ackermann}
     command:
       - /bin/bash
       - -ic
