@@ -24,16 +24,16 @@
 */
 var NAVTREE =
 [
-  [ "openads_ros2_demo_repository", "index.html", [
+  [ "openads_demo_module", "index.html", [
     [ "🚀 Quick Start", "index.html#autotoc_md1", null ],
-    [ "🧑‍💻 Development", "index.html#autotoc_md2", [
+    [ "💻 Development", "index.html#autotoc_md2", [
       [ "Set up Development Environment", "index.html#autotoc_md3", null ],
       [ "Build", "index.html#autotoc_md4", null ],
       [ "Run Tests", "index.html#autotoc_md5", null ]
     ] ],
     [ "📝 Documentation", "index.html#autotoc_md6", null ],
-    [ "🙏 Acknowledgements", "index.html#autotoc_md7", null ],
-    [ "CONTRIBUTIONS", "md_docs_2CONTRIBUTIONS.html", null ],
+    [ "⚖️ Licensing", "index.html#autotoc_md7", null ],
+    [ "🙏 Acknowledgements", "index.html#autotoc_md8", null ],
     [ "Implementation Details", "md_docs_2IMPLEMENTATION.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

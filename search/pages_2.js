@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['implementation_20details_0',['Implementation Details',['../md_docs_2IMPLEMENTATION.html',1,'']]]
+  ['openads_5fdemo_5fmodule_0',['openads_demo_module',['../index.html',1,'']]]
 ];

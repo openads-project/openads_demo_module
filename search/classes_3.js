@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['topicdiagnosticconfig_0',['TopicDiagnosticConfig',['../structros2__demo__package_1_1TopicDiagnosticConfig.html',1,'ros2_demo_package']]]
+  ['topicdiagnosticconfig_0',['TopicDiagnosticConfig',['../structopenads__demo__module_1_1TopicDiagnosticConfig.html',1,'openads_demo_module']]]
 ];

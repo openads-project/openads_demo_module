@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['service_5fserver_5f_0',['service_server_',['../classros2__demo__package_1_1Ros2DemoNode.html#a05be87761b01cd27463561c8203416e7',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['servicecallback_1',['serviceCallback',['../classros2__demo__package_1_1Ros2DemoNode.html#a7924a169d4357bfcd7bfab54ed7e988c',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['service_5fserver_5f_0',['service_server_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ae2f9fc12beeb6b04376efa78f9a1c920',1,'openads_demo_module::OpenadsDemoModule']]],
+  ['servicecallback_1',['serviceCallback',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a5aaa82f6120f871b31f07cebf59b9352',1,'openads_demo_module::OpenadsDemoModule']]],
   ['set_20up_20development_20environment_2',['Set up Development Environment',['../index.html#autotoc_md3',1,'']]],
-  ['sethealth_3',['setHealth',['../classros2__demo__package_1_1Ros2DemoNode.html#a1e2fd41433cfbd6458f6e7f1368ceb68',1,'ros2_demo_package::Ros2DemoNode']]],
-  ['setup_4',['setup',['../classros2__demo__package_1_1Ros2DemoNode.html#a82fc774ca948972fe7ef6ad9523e8fd2',1,'ros2_demo_package::Ros2DemoNode']]],
+  ['sethealth_3',['setHealth',['../classopenads__demo__module_1_1OpenadsDemoModule.html#a26859f55ae8f41c4ae4b23d657208584',1,'openads_demo_module::OpenadsDemoModule']]],
+  ['setup_4',['setup',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ac9f4c90d94a3bbe9578d2226486a315e',1,'openads_demo_module::OpenadsDemoModule']]],
   ['start_5',['🚀 Quick Start',['../index.html#autotoc_md1',1,'']]],
-  ['status_6',['status',['../structros2__demo__package_1_1Ros2DemoNode_1_1DiagnosticStatus.html#a19a8d13f979d2b6172017fcd91c1d04e',1,'ros2_demo_package::Ros2DemoNode::DiagnosticStatus']]],
-  ['subscriber_5f_7',['subscriber_',['../classros2__demo__package_1_1Ros2DemoNode.html#af194473eedc6a854a5b12da145413afa',1,'ros2_demo_package::Ros2DemoNode']]]
+  ['status_6',['status',['../structopenads__demo__module_1_1OpenadsDemoModule_1_1DiagnosticStatus.html#aa20a1fafcf4963f1ca8f88f4f607756c',1,'openads_demo_module::OpenadsDemoModule::DiagnosticStatus']]],
+  ['subscriber_5f_7',['subscriber_',['../classopenads__demo__module_1_1OpenadsDemoModule.html#ac1bb22f1479f56878cd9cb160df65f35',1,'openads_demo_module::OpenadsDemoModule']]]
 ];

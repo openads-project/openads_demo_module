@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ros2demonode_0',['Ros2DemoNode',['../classros2__demo__package_1_1Ros2DemoNode.html',1,'ros2_demo_package']]]
+  ['openadsdemomodule_0',['OpenadsDemoModule',['../classopenads__demo__module_1_1OpenadsDemoModule.html',1,'openads_demo_module']]]
 ];

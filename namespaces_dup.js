@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "ros2_demo_package", "namespaceros2__demo__package.html", "namespaceros2__demo__package" ]
+    [ "openads_demo_module", "namespaceopenads__demo__module.html", "namespaceopenads__demo__module" ]
 ];
