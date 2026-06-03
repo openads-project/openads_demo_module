@@ -8,5 +8,3 @@ jobs:
   consistency:
     uses: openads-project/openads-dev-environment/.github/workflows/consistency.yml@main
     secrets: inherit
-    with:
-      skip-checks: "dev_environment_at_remote_main"
