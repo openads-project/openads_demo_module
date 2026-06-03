@@ -55,6 +55,9 @@ struct TopicDiagnosticConfig {
  */
 class OpenadsDemoModule : public rclcpp::Node {
  public:
+  /**
+   * @brief Constructs the OpenadsDemoModule node
+   */
   OpenadsDemoModule();
 
  private:

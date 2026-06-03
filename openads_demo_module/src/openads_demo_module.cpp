@@ -311,6 +311,16 @@ void OpenadsDemoModule::setHealth(const unsigned char status,
 
 }  // namespace openads_demo_module
 
+/**
+ * @brief Entry point for the openads demo module node.
+ *
+ * Initializes ROS 2, creates the demo module node, spins it using a
+ * single-threaded executor, and shuts ROS 2 down on exit.
+ *
+ * @param argc Number of command-line arguments.
+ * @param argv Command-line argument values.
+ * @return int Exit status code.
+ */
 int main(int argc, char* argv[]) {
   rclcpp::init(argc, argv);
   auto node = std::make_shared<openads_demo_module::OpenadsDemoModule>();
