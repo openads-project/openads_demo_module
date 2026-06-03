@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - update-forks
     tags:
       - 'v[0-9]+.[0-9]+.[0-9]+'
   pull_request:
@@ -22,7 +21,7 @@ jobs:
           target: dev,run
           base-image: rwthika/ros2:jazzy
           rmw-implementation: rmw_zenoh_cpp
-          command: ros2 launch ros2_demo_package ros2_demo_node_launch.py
+          command: ros2 launch openads_demo_module openads_demo_module_launch.py
           enable-industrial-ci: true
         env:
           TARGET_CMAKE_ARGS: -DCMAKE_EXPORT_COMPILE_COMMANDS=1
