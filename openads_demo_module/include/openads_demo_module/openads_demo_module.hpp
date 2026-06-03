@@ -14,9 +14,9 @@
 #include <rclcpp_action/rclcpp_action.hpp>
 #include <std_srvs/srv/set_bool.hpp>
 
-#include <ros2_demo_package_interfaces/action/fibonacci.hpp>
+#include <openads_demo_module_interfaces/action/fibonacci.hpp>
 
-namespace ros2_demo_package {
+namespace openads_demo_module {
 
 template <typename C>
 struct is_vector : std::false_type {};
@@ -51,18 +51,14 @@ struct TopicDiagnosticConfig {
 };
 
 /**
- * @brief Ros2DemoNode class
+ * @brief OpenadsDemoModule class
  */
-class Ros2DemoNode : public rclcpp::Node {
+class OpenadsDemoModule : public rclcpp::Node {
  public:
   /**
-   * @brief Constructs a new Ros2DemoNode instance.
-   *
-   * Creates and initializes the ROS 2 demo node, including its core
-   * communication interfaces (such as publishers, subscribers, timers,
-   * or parameters) as configured by the implementation.
+   * @brief Constructs the OpenadsDemoModule node
    */
-  Ros2DemoNode();
+  OpenadsDemoModule();
 
  private:
   /**
@@ -127,8 +123,8 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param goal action goal
    * @return goal response
    */
-  rclcpp_action::GoalResponse actionHandleGoal(const rclcpp_action::GoalUUID& uuid,
-                                               std::shared_ptr<const ros2_demo_package_interfaces::action::Fibonacci::Goal> goal);
+  rclcpp_action::GoalResponse actionHandleGoal(
+      const rclcpp_action::GoalUUID& uuid, std::shared_ptr<const openads_demo_module_interfaces::action::Fibonacci::Goal> goal);
 
   /**
    * @brief Processes action cancel requests
@@ -137,7 +133,7 @@ class Ros2DemoNode : public rclcpp::Node {
    * @return cancel response
    */
   rclcpp_action::CancelResponse actionHandleCancel(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_module_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Processes accepted action goal requests
@@ -145,7 +141,7 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param goal_handle action goal handle
    */
   void actionHandleAccepted(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_module_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Executes an action
@@ -153,7 +149,7 @@ class Ros2DemoNode : public rclcpp::Node {
    * @param goal_handle action goal handle
    */
   void actionExecute(
-      const std::shared_ptr<rclcpp_action::ServerGoalHandle<ros2_demo_package_interfaces::action::Fibonacci>> goal_handle);
+      const std::shared_ptr<rclcpp_action::ServerGoalHandle<openads_demo_module_interfaces::action::Fibonacci>> goal_handle);
 
   /**
    * @brief Processes timer triggers
@@ -201,7 +197,7 @@ class Ros2DemoNode : public rclcpp::Node {
   /**
    * @brief Action server
    */
-  rclcpp_action::Server<ros2_demo_package_interfaces::action::Fibonacci>::SharedPtr action_server_;
+  rclcpp_action::Server<openads_demo_module_interfaces::action::Fibonacci>::SharedPtr action_server_;
 
   /**
    * @brief Timer
@@ -248,4 +244,4 @@ class Ros2DemoNode : public rclcpp::Node {
   TopicDiagnosticConfig diagnosed_publisher_config_;
 };
 
-}  // namespace ros2_demo_package
+}  // namespace openads_demo_module

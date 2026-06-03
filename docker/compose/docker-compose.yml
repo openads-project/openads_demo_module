@@ -1,0 +1,32 @@
+services:
+
+  openads-demo-module:
+    image: ghcr.io/openads-project/openads_demo_module:v1.0.0
+    environment:
+      # --- name ------
+      NAMESPACE: /
+      NAME: openads_demo_module
+      # --- inputs ----
+      INPUT_TOPIC: ~/input
+      # --- outputs ---
+      OUTPUT_TOPIC: ~/output
+      # --- other -----
+      SERVICE_TOPIC: ~/service
+      LOG_LEVEL: ${LOG_LEVEL:-info}
+      USE_SIM_TIME: ${USE_SIM_TIME:-false}
+      PARAMS: ${PARAMS:-/docker-ros/ws/install/openads_demo_module/share/openads_demo_module/config/params.yml}
+    command:
+      - /bin/bash
+      - -ic
+      - |
+        ros2 launch openads_demo_module openads_demo_module_launch.py \
+          namespace:=$${NAMESPACE} \
+          name:=$${NAME} \
+          log_level:=$${LOG_LEVEL} \
+          use_sim_time:=$${USE_SIM_TIME} \
+          params:=$${PARAMS} \
+          input_topic:=$${INPUT_TOPIC} \
+          output_topic:=$${OUTPUT_TOPIC} \
+          service_topic:=$${SERVICE_TOPIC}
+    # volumes:
+    #   - ./params.yml:/docker-ros/ws/install/openads_demo_module/share/openads_demo_module/config/params.yml

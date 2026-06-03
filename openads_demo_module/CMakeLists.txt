@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(ros2_demo_package)
+project(openads_demo_module)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,12 +10,12 @@ find_package(diagnostic_updater REQUIRED)
 find_package(geometry_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(rclcpp_action REQUIRED)
-find_package(ros2_demo_package_interfaces REQUIRED)
+find_package(openads_demo_module_interfaces REQUIRED)
 find_package(std_srvs REQUIRED)
 
-set(TARGET_NAME ros2_demo_node)
+set(TARGET_NAME openads_demo_module)
 
-add_executable(${TARGET_NAME} src/ros2_demo_node.cpp)
+add_executable(${TARGET_NAME} src/openads_demo_module.cpp)
 
 target_include_directories(${TARGET_NAME} PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -28,7 +28,7 @@ target_link_libraries(${TARGET_NAME} PUBLIC
   ${diagnostic_updater_TARGETS}
   ${geometry_msgs_TARGETS}
   ${rclcpp_action_TARGETS}
-  ${ros2_demo_package_interfaces_TARGETS}
+  ${openads_demo_module_interfaces_TARGETS}
   ${std_srvs_TARGETS}
 )
 
