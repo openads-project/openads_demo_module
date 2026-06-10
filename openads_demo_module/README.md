@@ -2,15 +2,6 @@
 
 ROS 2 C++ package template for OpenADS
 
-- [Container Images](#container-images)
-- [openads_demo_module](#openads_demo_module)
-
-### Container Images
-
-| Description | Image:Tag | Default Command |
-| --- | --- | -- |
-|  |  |  |
-
 ## Nodes
 
 ### `openads_demo_module`
@@ -54,6 +45,14 @@ flowchart LR
 | Parameter | Type | Default | Description |
 | --- | --- | --- | --- |
 | `param` | `float` | `1.0` | Demo parameter |
+| `diagnostic_updater.topic_diagnostic.min_frequency` | `float` | - | Minimum frequency for incoming messages |
+| `diagnostic_updater.topic_diagnostic.max_frequency` | `float` | - | Maximum frequency for incoming messages |
+| `diagnostic_updater.topic_diagnostic.min_acceptable_timestamp_delta` | `float` | - | Minimum acceptable timestamp delta for incoming messages |
+| `diagnostic_updater.topic_diagnostic.max_acceptable_timestamp_delta` | `float` | - | Maximum acceptable timestamp delta for incoming messages |
+| `diagnostic_updater.diagnosed_publisher.min_frequency` | `float` | - | Minimum frequency for outgoing messages |
+| `diagnostic_updater.diagnosed_publisher.max_frequency` | `float` | - | Maximum frequency for outgoing messages |
+| `diagnostic_updater.diagnosed_publisher.min_acceptable_timestamp_delta` | `float` | - | Minimum acceptable timestamp delta for outgoing messages |
+| `diagnostic_updater.diagnosed_publisher.max_acceptable_timestamp_delta` | `float` | - | Maximum acceptable timestamp delta for outgoing messages |
 
 ## Launch Files
 
