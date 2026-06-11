@@ -16,6 +16,28 @@
 
 This repository serves as a demo for an OpenADS module, showcasing the structure and documentation style for OpenADS packages. It includes a simple ROS 2 node that subscribes to a topic, processes the data, and publishes the result. This is a short description of the repository and its purpose.
 
+> ⚙️ Make sure to configure these **recommended repository settings:**
+> 
+> [**GitHub Organization Settings**](https://github.com/organizations/openads-project/settings):
+>   - Settings → Codespaces → General → Codespaces access → ○ Enable for all members
+>   - Settings → Actions → General → Approval for running fork pull request workflows from contributors → ○ Require approval for all external contributors
+>   - Settings → Actions → General → Workflow permissions → ○ Read and write permissions
+>   - Settings → Packages → Package creation → ☑ Public
+> 
+> [**GitHub Repository Settings**](https://github.com/openads-project/openads_demo_module/settings):
+>   - About (Sidebar):
+>     - Description: `<short_title_description_from_readme>`
+>     - Website `https://openads-project.github.io`
+>     - Topics: e.g. `openadservice`, `openadsuite`, `openadstack`, `openadsim`, ...
+>   - Settings → General → Pull Requests → ☑ Allow auto-merge (only possible to set once public)
+>   - Settings → General → Pull Requests → ☑ Automatically delete head branches
+>   - Settings → Branches → Add classic branch protection rule (only takes effect once public)
+>     - Branch name pattern: `main`
+>     - ☑ Require a pull request before merging
+>     - ☑ Require status checks to pass before merging (only possible to set once public)
+>     - ☑ Require conversation resolution before merging (only possible to set once public)
+>   - Settings → Pages → Branch: `gh-pages` (only possible to set once public)
+
 <p align="center">
   <strong>🚀 <a href="#-quick-start">Quick Start</a></strong> • <strong>💻 <a href="#-development">Development</a></strong> • <strong>📝 <a href="#-documentation">Documentation</a></strong>
 </p>
