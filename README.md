@@ -16,7 +16,7 @@
 
 This repository serves as a demo for an OpenADS module, showcasing the structure and documentation style for OpenADS packages. It includes a simple ROS 2 node that subscribes to a topic, processes the data, and publishes the result. This is a short description of the repository and its purpose.
 
-> ⚙️ Make sure to configure these **recommended repository settings:**
+> ### ⚙️ Recommended GitHub Settings
 > 
 > [**GitHub Organization Settings**](https://github.com/organizations/openads-project/settings):
 >   - Settings → Codespaces → General → Codespaces access → ○ Enable for all members
