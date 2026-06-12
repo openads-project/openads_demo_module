@@ -27,7 +27,7 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 > [**GitHub Repository Settings**](https://github.com/openads-project/openads_demo_module/settings):
 >   - About (Sidebar):
 >     - Description: `<short_title_description_from_readme>`
->     - Website `https://openads-project.github.io`
+>     - Website: ☑ Use your GitHub Pages website
 >     - Topics: e.g. `openadservice`, `openadsuite`, `openadstack`, `openadsim`, ...
 >   - Settings → General → Pull Requests → ☑ Allow auto-merge (only possible to set once public)
 >   - Settings → General → Pull Requests → ☑ Automatically delete head branches
@@ -37,6 +37,9 @@ This repository serves as a demo for an OpenADS module, showcasing the structure
 >     - ☑ Require status checks to pass before merging (only possible to set once public)
 >     - ☑ Require conversation resolution before merging (only possible to set once public)
 >   - Settings → Pages → Branch: `gh-pages` (only possible to set once public)
+>   - If the repository was created in a private namespace and the organization settings above cannot be applied:
+>     - Settings → Actions → General → Workflow permissions → ○ Read and write permissions
+>   - If the repository's visibility is changed from *private* to *public*, make sure to also [change the visibility of the associated packages](https://docs.github.com/en/packages/learn-github-packages/configuring-a-packages-access-control-and-visibility).
 
 <p align="center">
   <strong>🚀 <a href="#-quick-start">Quick Start</a></strong> • <strong>💻 <a href="#-development">Development</a></strong> • <strong>📝 <a href="#-documentation">Documentation</a></strong>
